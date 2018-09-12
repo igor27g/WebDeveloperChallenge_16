@@ -1,0 +1,460 @@
+@import "mixins";
+
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* ----------------------------------------------- */
+
+/* SECTION-HOME */
+
+/* ----------------------------------------------- */
+
+
+.section-home {
+   
+    height: 840px; 
+    
+    background-image: url(../images/s1bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.row-home {
+    height: 840px;
+    display: flex;
+    align-items: center;
+}
+
+    
+.col-home {
+    &__heading {
+        text-shadow: 0 2px 16px rgba(0, 0, 0, 0.29);
+        color: #ffffff;
+        font-family: Poppins;
+        font-size: 50px;
+        font-weight: 400;
+        line-height: 52px;
+        text-transform: uppercase;
+    }
+    &__text {
+        color: #ffffff;
+        font-family: "PT Serif";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+}
+
+
+/* ----------------------------------------------- */
+
+/* SECTION-ABOUT */
+
+/* ----------------------------------------------- */
+
+.col-about {
+    &__heading {
+        margin-top: 120px;
+        margin-bottom: 60px;
+        
+        &--number {
+           @include number; 
+            
+        }
+        
+        &--ask {
+            @include ask;
+        }
+    }
+    
+    &__text {
+       @include text;
+        
+        margin-bottom: 60px;
+    }
+    
+    &__step {
+        color: #999999;
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0.64px;
+        
+        &--point {
+           font-size: 16px;
+           background-color: #66a900;
+           border-radius: 100%;
+           padding: 10px 13px;
+           color: #ffffff;
+           font-weight: 700;
+           line-height: 30px;
+           border: 6px solid #000000;
+           border: 2px solid rgba(102, 169, 0, 0.8);
+        }
+    }
+}
+
+
+.col-information {
+    background-color: #66a900;
+    
+    &__heading {
+        color: #ffffff;
+        font-family: "PT Serif";
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 1.2px;
+        padding-right: 30px;
+    }
+    
+    &__text {
+        color: #ffffff;
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 30px;
+        letter-spacing: 0.56px;
+        text-align: right;
+        margin-right: -12px;
+        padding-bottom: 60px;
+    }
+    
+    
+    &__button {
+        @include button;
+    }
+}
+
+
+
+/* ----------------------------------------------- */
+
+/* SECTION-FEATURES */
+
+/* ----------------------------------------------- */
+
+.col-features {
+    
+     &__heading {
+        margin-top: 150px;
+        margin-bottom: 60px;
+        font-family: "PT Serif";
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 1.2px;
+         
+        &--number {
+           @include number;
+        }
+        
+        &--ask {
+            @include ask;
+        }
+    }
+    
+    &__icon {
+        color: #66a900;
+        margin-right: 10px;
+    }
+    
+     &__text {
+        @include text;
+    }   
+    
+      &__heading-secondary {
+          color: #333333;
+          font-family: Poppins;
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 28px;
+         }
+    
+    &__text--2 {
+        color: #b3b3b3;
+        font-family: "PT Serif";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+}
+
+
+
+figure.img-features {
+    margin-top: 90px;
+    text-align: center;
+}
+
+
+/* ----------------------------------------------- */
+
+/* SECTION-TESTIMONIAL */
+
+/* ----------------------------------------------- */
+
+
+.col-testimonial {
+    &__heading {
+        font-family: "PT Serif";
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 1.2px;
+        margin-bottom: 75px;
+        
+        &--number {
+           @include number;
+        }
+        
+        &--ask {
+            @include ask;
+        }
+    }
+    
+    &__blockquote {
+       color: #b8b8b8;
+       font-family: "PT Serif";
+       font-size: 14px;
+       font-style: italic;
+       line-height: 28px;
+    }
+    
+    &__author {
+        color: #333333;
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        font-weight: bold;
+    }
+    
+    &__text {
+        @include text;
+    }
+}
+
+
+
+/* ----------------------------------------------- */
+
+/* SECTION-PRICING */
+
+/* ----------------------------------------------- */
+
+  .col-pricing {
+   
+      &__heading {
+          margin-top: 160px;
+          font-family: Poppins;
+          font-size: 30px;
+          font-weight: 400;
+          line-height: 28px;
+          color: #333333;
+          
+           &--number {
+           @include number;
+        }
+        
+        &--ask {
+            @include ask;
+        }
+          
+      }
+      
+      &__text {
+        @include text;
+        margin-top: 60px;
+        margin-bottom: 80px;
+    }
+}
+
+.col-pricing-3 {
+    
+    background-color: #66a900;
+    
+    &__heading {
+         color: #ffffff;
+        font-family: "PT Serif";
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 1.2px;
+        padding-left: 43px;
+        margin-top: 20px;
+    }
+    
+    &__text {
+        color: #ffffff;
+        font-family: Poppins;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 30px;
+        letter-spacing: 0.56px;
+        text-align: right;
+        margin-right: -9px;
+        padding-bottom: 60px;
+    }
+    
+    &__button {
+         @include button;
+         margin-left: 12px;      
+    }
+    
+    &__img {
+       line-height: 6;
+    }
+}
+
+
+.card-main {
+    height: 418px;
+    box-shadow: 0 12px 38px rgba(0, 0, 0, 0.11);
+    border-radius: 3px;
+    background-color: #ffffff;
+}
+
+.card-body {
+    
+    &__text-price {
+        color: #333333;
+        font-family: Poppins;
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 28px;
+        margin-top: 32px;
+    }
+    
+    &__clients {
+        color: #c0c0c0;
+        font-family: "PT Serif";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 28px;
+        margin-top: 15px;
+        margin-bottom: 35px;
+    }
+    
+    &__plan {
+        color: #aaaaaa;
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 28px;
+        letter-spacing: 1.96px;
+        border-left: 3px solid #66a900;
+        border-right: 3px solid #66a900;
+        margin-bottom: 40px;
+    }
+    
+    &__plan--premium {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: 1.96px;
+        margin-bottom: 40px;
+        
+         background-color: #66a900;
+        color: #ffffff;
+    }
+    
+    
+    &__text {
+        color: #c7c7c7;
+        font-family: "PT Serif";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 28px;
+        margin-bottom: 35px;
+    }
+}
+
+.card-block {
+    
+    &__list-group {
+        list-style: none;
+        font-weight: 700;
+        padding-left: 0;
+
+        &__item {
+            color: #333333;
+            font-family: Poppins;
+            font-size: 14px;
+            line-height: 28px;            
+        }   
+    
+    }
+    
+    &__list-group--premium {
+        color: #66a900;
+        list-style: none;
+        font-weight: 700;
+        padding-left: 0;
+    }  
+}
+
+
+/* ----------------------------------------------- */
+
+/* SECTION-FOOTER */
+
+/* ----------------------------------------------- */
+
+
+.col-footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items:flex-end; 
+    padding-left: 0;
+    
+    &__copy {
+        color: #9e9e9e;
+        font-family: "PT Serif";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+}
+
+.col-footer-2 {
+    
+    &__nav-footer {
+        display: flex;
+        list-style: none;
+        align-items: flex-end;
+        justify-content: center;
+        margin-top: 100px;
+    }    
+    
+    li.nav-footer__item {
+        padding-right: 25px;
+        color: #9e9e9e;
+        font-family: "PT Serif";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+    
+    li.nav-footer__item--policy {
+        padding-right: 25px;
+        color: #9e9e9e;
+        font-family: "PT Serif";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 28px; 
+        text-decoration: underline;
+    }
+    
+}
