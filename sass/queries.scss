@@ -4,7 +4,7 @@
 
 /* ----------------------------------------------- */
 
-@media (min-width: 1200px) { 
+@media (max-width: 1200px) { 
 
     .col-home {
         &__text {
@@ -13,11 +13,12 @@
     }
 }
 
-@media (min-width: 992px) { 
+@media (max-width: 992px) { 
 
     .col-home {
         &__heading {
             font-size: 47px;
+            color: red;
         }
         
         &__text {
@@ -26,8 +27,13 @@
     }  
 }
 
-@media (min-width: 576px) {
+@media (max-width: 576px) {
     .col-home {
+       
+        &__heading {
+            font-size: 40px !important;
+        }
+        
         &__text {
             margin-left: 40px; 
         }
@@ -40,7 +46,12 @@
 
 /* ----------------------------------------------- */
 
-@media (min-width: 768px) {
+
+@media (max-width: 1200px){
+    
+}
+
+@media (max-width: 768px) {
     .col-about__heading {
         text-align: center;
     }
@@ -72,7 +83,7 @@
 }
 
 
-@media (min-width: 576px) {
+@media (max-width: 576px) {
     .col-about__heading {
         text-align: center;
     }
@@ -124,7 +135,7 @@
 /* ----------------------------------------------- */
 
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     
     .col-features {
         &__heading {
@@ -150,7 +161,7 @@
 }
 
 
-@media (min-width: 576px) {
+@media (max-width: 576px) {
     
  .col-features {
         &__heading {
@@ -183,7 +194,7 @@
 
 /* ----------------------------------------------- */
 
-@media (min-width: 992px) {
+@media (max-width: 992px) {
     
     .col-testimonial {
        
@@ -194,7 +205,7 @@
 }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .col-testimonial {
             text-align: center;      
         
@@ -218,7 +229,7 @@
 }
 
 
-@media (min-width: 576px) {
+@media (max-width: 576px) {
     .col-testimonial {
         text-align: center;
     }
@@ -232,9 +243,7 @@
 /* ----------------------------------------------- */
 
 
-
-
-@media (min-width: 992px) {
+@media (max-width: 992px) {
     .col-pricing {
 
         &__heading {
@@ -248,7 +257,7 @@
 }
 
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .col-pricing {
 
         &__heading {
@@ -281,7 +290,7 @@
     }
 }
 
-@media (min-width: 576px) {
+@media (max-width: 576px) {
     .col-pricing {
         text-align: center;
     }
@@ -313,7 +322,7 @@
 
 /* ----------------------------------------------- */
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .col-footer {
         &__img {
             padding-left: 20px;
@@ -321,7 +330,7 @@
     }
 }
 
-@media (min-width:576px) {
+@media (max-width:576px) {
     .col-footer {
         padding-left: 0;
         padding-right: 0;

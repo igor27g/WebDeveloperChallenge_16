@@ -31,7 +31,12 @@
      font-weight: 700;
      line-height: 30px;
     
-      &:hover{
+      &:hover,
+      &:active,
+      &:focus,
+      &:visited{
             color: #66a900;
         }
+    
+    
 }

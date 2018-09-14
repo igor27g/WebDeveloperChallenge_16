@@ -1,4 +1,4 @@
-body {
+html, body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
@@ -7,11 +7,18 @@ body {
 /* ----------------------------------------------- */
 /* HEADER  */
 /* ----------------------------------------------- */
+.navbar {
+  background-color: #66a900 !important; }
+
 .navbar-light .navbar-nav .active > .nav-link {
   color: #ffffff; }
 
-.navbar-light .navbar-nav .active > .nav-link:hover {
-  color: #ffffff; }
+li.nav-item {
+  transition: all 1s; }
+
+li.nav-item:hover {
+  color: #66a900;
+  background-color: #ffffff; }
 
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
   color: #e8e8e8; }
@@ -28,6 +35,9 @@ body {
   border-color: rgba(0, 0, 0, 0.1);
   margin-right: 20px; }
 
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #66a900; }
+
 /* ----------------------------------------------- */
 /* SECTION-HOME */
 /* ----------------------------------------------- */
@@ -36,7 +46,8 @@ body {
   background-image: url(../images/s1bg.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  overflow: hidden; }
 
 .row-home {
   height: 840px;
@@ -69,7 +80,7 @@ body {
 /* SECTION-ABOUT */
 /* ----------------------------------------------- */
 .col-about__heading {
-  margin-top: 120px;
+  margin-top: 90px;
   margin-bottom: 60px; }
   .col-about__heading--number {
     opacity: 0.15;
@@ -138,7 +149,7 @@ body {
     font-size: 16px;
     font-weight: 700;
     line-height: 30px; }
-    .col-information__button:hover {
+    .col-information__button:hover, .col-information__button:active, .col-information__button:focus, .col-information__button:visited {
       color: #66a900; }
 
 /* ----------------------------------------------- */
@@ -293,7 +304,7 @@ figure.img-features {
     font-weight: 700;
     line-height: 30px;
     margin-left: 12px; }
-    .col-pricing-3__button:hover {
+    .col-pricing-3__button:hover, .col-pricing-3__button:active, .col-pricing-3__button:focus, .col-pricing-3__button:visited {
       color: #66a900; }
   .col-pricing-3__img {
     line-height: 6; }
@@ -302,7 +313,12 @@ figure.img-features {
   height: 418px;
   box-shadow: 0 12px 38px rgba(0, 0, 0, 0.11);
   border-radius: 3px;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  transition: .5s; }
+
+.card-main:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px 0 rgba(78, 128, 1, 0.8); }
 
 .card-body__text-price {
   color: #333333;
@@ -310,7 +326,8 @@ figure.img-features {
   font-size: 40px;
   font-weight: 400;
   line-height: 28px;
-  margin-top: 32px; }
+  margin-top: 32px;
+  padding-top: 20px; }
 .card-body__clients {
   color: #c0c0c0;
   font-family: "PT Serif";
